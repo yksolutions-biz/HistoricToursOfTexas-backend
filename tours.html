@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tours - Historic Tours of Texas</title>
+    <meta name="description" content="Browse our complete selection of historic tours across Texas. From the Alamo to Victorian Galveston, discover the perfect historical adventure.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="historicToursLogo.ico">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="Adobe Express - file (1).png" alt="Historic Tours of Texas Logo">
+
+            </a>
+            
+            <!-- Mobile Navigation Toggle -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container page-header-content">
+                <h1>Explore Our Historic Tours</h1>
+                <p>Choose from our carefully crafted tours that showcase Texas's rich heritage and diverse history.</p>
+            </div>
+        </section>
+
+        <!-- Tour Filter Section -->
+        <section style="background-color: var(--background-white); padding: 3rem 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Filter by Region</h2>
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <button class="filter-btn" data-filter="all" style="padding: 0.4rem 1.2rem; border: 2px solid var(--primary-color); background-color: var(--primary-color); color: var(--text-light); border-radius: 25px; cursor: pointer; transition: all var(--transition-speed); font-size: 0.8rem;">All Tours</button>
+                        <button class="filter-btn" data-filter="san-antonio" style="padding: 0.4rem 1.2rem; border: 2px solid var(--primary-color); background-color: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: all var(--transition-speed); font-size: 0.8rem;">San Antonio</button>
+                        <button class="filter-btn" data-filter="austin" style="padding: 0.4rem 1.2rem; border: 2px solid var(--primary-color); background-color: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: all var(--transition-speed); font-size: 0.8rem;">Austin</button>
+                        <button class="filter-btn" data-filter="galveston" style="padding: 0.4rem 1.2rem; border: 2px solid var(--primary-color); background-color: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: all var(--transition-speed); font-size: 0.8rem;">Galveston</button>
+                        <button class="filter-btn" data-filter="houston" style="padding: 0.4rem 1.2rem; border: 2px solid var(--primary-color); background-color: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: all var(--transition-speed); font-size: 0.8rem;">Houston</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Tours Grid -->
+        <section class="featured-tours">
+            <div class="container">
+                <div class="tour-grid">
+                    <!-- San Antonio Tours -->
+                    <div class="tour-card" data-region="san-antonio" id="alamo">
+                        <img src="https://picsum.photos/seed/alamo-mission/400/300.jpg" alt="The Alamo Tour" class="tour-image">
+                        <div class="tour-content">
+                            <h3>The Alamo & San Antonio Missions</h3>
+                            <p>Walk through the sacred grounds where Texas independence was forged. Explore the legendary Alamo and UNESCO World Heritage missions including Mission San José, Mission Concepción, Mission San Juan, and Mission Espada.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 4 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 20 people</p>
+                            </div>
+                            <div class="tour-price">$89 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="san-antonio">
+                        <img src="https://picsum.photos/seed/riverwalk-san-antonio/400/300.jpg" alt="San Antonio River Walk" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Historic River Walk & Downtown</h3>
+                            <p>Discover the history behind San Antonio's famous River Walk. Learn about the civil engineering marvel and explore historic downtown landmarks including HemisFair Park and the Spanish Governor's Palace.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 3 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 15 people</p>
+                            </div>
+                            <div class="tour-price">$65 per person</div>
+                        </div>
+                    </div>
+
+                    <!-- Austin Tours -->
+                    <div class="tour-card" data-region="austin" id="austin">
+                        <img src="https://picsum.photos/seed/texas-capitol-austin/400/300.jpg" alt="Texas State Capitol" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Austin's State Capitol Trail</h3>
+                            <p>Discover the political heart of Texas. Tour the stunning Capitol building (taller than the U.S. Capitol), explore historic Congress Avenue, and visit the Governor's Mansion with its rich political history.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 3.5 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 25 people</p>
+                            </div>
+                            <div class="tour-price">$75 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="austin">
+                        <img src="https://picsum.photos/seed/south-by-southwest-austin/400/300.jpg" alt="Austin Music History" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Austin Music History Tour</h3>
+                            <p>Explore the live music capital of the world. Visit historic venues like the Continental Club, learn about Austin's role in music history, and discover the stories behind legendary musicians who called Austin home.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 3 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 20 people</p>
+                            </div>
+                            <div class="tour-price">$55 per person</div>
+                        </div>
+                    </div>
+
+                    <!-- Galveston Tours -->
+                    <div class="tour-card" data-region="galveston" id="galveston">
+                        <img src="https://picsum.photos/seed/galveston-victorian-mansion/400/300.jpg" alt="Galveston Victorian Heritage" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Galveston's Victorian Heritage</h3>
+                            <p>Step back in time to the golden age of Galveston. Explore magnificent Victorian mansions including Bishop's Palace, tour the historic Strand District, and learn about the 1900 hurricane that changed the city forever.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 5 hours</p>
+                                <p><strong>Difficulty:</strong> Moderate</p>
+                                <p><strong>Group Size:</strong> Max 15 people</p>
+                            </div>
+                            <div class="tour-price">$95 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="galveston">
+                        <img src="https://picsum.photos/seed/galveston-pier-history/400/300.jpg" alt="Galveston Seaport History" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Galveston Seaport & Immigration</h3>
+                            <p>Discover Galveston's role as the "Ellis Island of the West." Tour the historic port, learn about immigration history, and visit the Texas Seaport Museum with its tall ship exhibits.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 4 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 20 people</p>
+                            </div>
+                            <div class="tour-price">$80 per person</div>
+                        </div>
+                    </div>
+
+                    <!-- Houston Tours -->
+                    <div class="tour-card" data-region="houston">
+                        <img src="https://picsum.photos/seed/houston-downtown-history/400/300.jpg" alt="Houston Historic District" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Houston's Historic Downtown</h3>
+                            <p>Explore Houston's transformation from a swampy outpost to America's fourth-largest city. Visit the historic district, learn about the Allen brothers, and discover hidden historical gems in the heart of downtown.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 3 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 20 people</p>
+                            </div>
+                            <div class="tour-price">$60 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="houston">
+                        <img src="https://picsum.photos/seed/space-center-houston/400/300.jpg" alt="Space History Houston" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Space Age Houston History</h3>
+                            <p>Journey through Houston's role in the Space Race. Visit historic NASA sites, learn about the Apollo missions, and discover how Houston became the hub of America's space exploration efforts.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 6 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 30 people</p>
+                            </div>
+                            <div class="tour-price">$120 per person</div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Texas Tours -->
+                    <div class="tour-card" data-region="san-antonio" id="san-antonio">
+                        <img src="https://picsum.photos/seed/texas-revolution-battlefield/400/300.jpg" alt="Texas Revolution Battlefields" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Texas Revolution Battlefields</h3>
+                            <p>Follow the path of Texas independence. Visit the San Jacinto Battlefield, Goliad State Park, and Washington-on-the-Brazos where the Texas Declaration of Independence was signed.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> Full day (8 hours)</p>
+                                <p><strong>Difficulty:</strong> Moderate</p>
+                                <p><strong>Group Size:</strong> Max 20 people</p>
+                            </div>
+                            <div class="tour-price">$150 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="austin">
+                        <img src="https://picsum.photos/seed/texas-hill-country-history/400/300.jpg" alt="Texas Hill Country Heritage" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Texas Hill Country Heritage</h3>
+                            <p>Explore the German heritage of the Texas Hill Country. Visit Fredericksburg, Luckenbach, and learn about the unique cultural influences that shaped this beautiful region.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 7 hours</p>
+                                <p><strong>Difficulty:</strong> Moderate</p>
+                                <p><strong>Group Size:</strong> Max 15 people</p>
+                            </div>
+                            <div class="tour-price">$110 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="galveston">
+                        <img src="https://picsum.photos/seed/juneteenth-galveston/400/300.jpg" alt="Juneteenth History Tour" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Juneteenth Freedom Tour</h3>
+                            <p>Learn about the origins of Juneteenth in Galveston. Visit the sites where General Granger read the emancipation proclamation and explore the African American heritage of the island.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 3 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 25 people</p>
+                            </div>
+                            <div class="tour-price">$50 per person</div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card" data-region="houston">
+                        <img src="https://picsum.photos/seed/houston-cattle-history/400/300.jpg" alt="Cattle Kingdom Tour" class="tour-image">
+                        <div class="tour-content">
+                            <h3>Cattle Kingdom & Oil Boom</h3>
+                            <p>Discover Houston's role in the cattle industry and oil boom. Visit historic sites that tell the story of how black gold and longhorns transformed Texas into an economic powerhouse.</p>
+                            <div class="tour-details">
+                                <p><strong>Duration:</strong> 4 hours</p>
+                                <p><strong>Difficulty:</strong> Easy</p>
+                                <p><strong>Group Size:</strong> Max 20 people</p>
+                            </div>
+                            <div class="tour-price">$70 per person</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Information Section -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">Tour Information & Booking</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Booking Info Card -->
+                    <div style="background-color: var(--background-white); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1rem;">How to Book</h3>
+                        <p>Book online through our website, call our booking line, or visit our office in Austin. We recommend booking at least 48 hours in advance, especially for weekend tours.</p>
+                    </div>
+
+                    <!-- Group Tours Card -->
+                    <div style="background-color: var(--background-white); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1rem;">Group Tours</h3>
+                        <p>Special rates available for groups of 10+ people. Custom itineraries and private tours can be arranged. Contact our group tour specialist for details.</p>
+                    </div>
+
+                    <!-- What's Included Card -->
+                    <div style="background-color: var(--background-white); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1rem;">What's Included</h3>
+                        <p>All tours include expert guide, entrance fees, transportation between sites, and bottled water. Some tours include lunch - check individual tour details.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="contact.html" class="btn">Book Your Tour Today</a>
+                    <a href="#" class="btn" style="margin-left: 1rem;">Add New Tour</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>Historic Tours of Texas</h3>
+                    <p>Preserving and sharing the rich heritage of the Lone Star State through immersive, educational, and unforgettable historic tours.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">All Tours</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Tours -->
+                <div class="footer-section">
+                    <h3>Popular Tours</h3>
+                    <ul>
+                        <li><a href="#alamo">The Alamo Tour</a></li>
+                        <li><a href="#austin">Austin Capitol Tour</a></li>
+                        <li><a href="#galveston">Galveston Heritage</a></li>
+                        <li><a href="#san-antonio">San Antonio Missions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>123 History Lane<br>Austin, TX 78701<br>Phone: (512) 555-0123<br>Email: info@historictoursoftexas.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Historic Tours of Texas. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Tour Filter Script -->
+    <script>
+        // Tour filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const tourCards = document.querySelectorAll('.tour-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    // Update button styles
+                    filterButtons.forEach(btn => {
+                        btn.style.backgroundColor = 'transparent';
+                        btn.style.color = 'var(--primary-color)';
+                    });
+                    this.style.backgroundColor = 'var(--primary-color)';
+                    this.style.color = 'var(--text-light)';
+                    
+                    // Filter tours
+                    tourCards.forEach(card => {
+                        if (filter === 'all' || card.dataset.region === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
